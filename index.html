@@ -3,76 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuristic Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>A Message for you</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="icon/x-icon" href="img/bgm.png">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <section class="hero">
-        <h1>Welcome to Marc's Futuristic Website</h1>
-        <p>Explore the future of technology and innovation</p>
-        <button>Learn More</button>
-    </section>
-    <section class="features">
-        <h2>Our Features</h2>
-        <ul>
-            <li>
-                <i class="material-icons">computer</i>
-                <h3>Artificial Intelligence</h3>
-                <p>Our AI technology helps you make informed decisions</p>
-            </li>
-            <li>
-                <i class="material-icons">cloud</i>
-                <h3>Cloud Computing</h3>
-                <p>Store and access your data from anywhere in the world</p>
-            </li>
-            <li>
-                <i class="material-icons">security</i>
-                <h3>Cybersecurity</h3>
-                <p>Protect your data with our advanced security measures</p>
-            </li>
-        </ul>
-    </section>
-    <div class="spinner"></div>
-    <script>
-        // Add event listener to the navigation menu
-        document.addEventListener("DOMContentLoaded", function() {
-          const navLinks = document.querySelectorAll("nav ul li a");
-          navLinks.forEach(link => {
-            link.addEventListener("click", function(event) {
-              event.preventDefault();
-              const targetSection = document.querySelector(`#${event.target.textContent.toLowerCase()}`);
-              targetSection.scrollIntoView({ behavior: "smooth" });
-            });
-          });
-        });
+    
+    <div class="bg-image"></div>
 
-         // Add functionality to the hero section button
-document.addEventListener("DOMContentLoaded", function() {
-  const heroButton = document.querySelector(".hero button");
-  heroButton.addEventListener("click", function() {
-    window.open("https://www.youtube.com", "_blank"); // open in new tab
-  });
-});
-
-        // Add animation to the features section
-        document.addEventListener("DOMContentLoaded", function() {
-          const featuresList = document.querySelector(".features ul");
-          featuresList.addEventListener("mouseover", function(event) {
-            const targetLi = event.target.closest("li");
-            targetLi.classList.add("active");
-          });
-          featuresList.addEventListener("mouseout", function(event) {
-            const targetLi = event.target.closest("li");
-            targetLi.classList.remove("active");
-          });
-        });
-    </script>
+        <div class="bg-text expand">
+            <h2 id="myh2">Hey! Are you okay?</h2>
+            <div class="button-container">
+                <button type="submit" id="yesBtn">Yes</button>
+                <button type="submit" id="noBtn">No</button>
+            </div>
+            <!-- Remove the h3 element from here -->
+        </div>
+    </div>
+<script src="/index.js"></script>
 </body>
 </html>
