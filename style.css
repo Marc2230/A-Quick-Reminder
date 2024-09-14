@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'handwrite';
-  src: url(PatrickHandSC-Regular.ttf);
+  src: url(/PatrickHandSC-Regular.ttf);
 }
 
 body, html {
@@ -33,7 +33,7 @@ body, html {
 }
 
 .bg-image {
-  background-image: url("bgm.png");
+  background-image: url("/bgm.png");
   filter: blur(8px);
   -webkit-filter: blur(8px);
   height: 100%; 
